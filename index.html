@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="images.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+<title>Ficha de Cadastro</title>
+    <style>
+    body{
+        background-color: rgb(221, 224, 227);
+    }
+    .container {
+    text-align: center; 
+    background-color: rgb(34, 89, 151);
+}
+a {
+    display: inline-block; 
+    text-decoration: none; 
+}
+
+a img {   
+    width: 150px; 
+    height: auto;
+    border: none; 
+    transition: transform 0.3s ease; 
+}
+
+a:hover img {
+    transform: scale(1.1);
+}
+
+h1{
+    text-align: center;
+    font-family: "Moderustic", sans-serif;
+    padding: 30px 5px 50px 100px;
+    color: rgb(28, 53, 90);
+}
+
+form{
+    text-align: center;
+    font-family: "Moderustic", sans-serif;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; 
+        padding: 20px 10px;
+    }
+
+    a img {
+        width: 120px; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+        padding: 15px 5px;
+    }
+
+    a img {
+        width: 100px;
+    }
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="https://www.exemplo.com" title="Visite o site do Senai">
+            <img src="senai-logo-0.png" alt="Logotipo do Senai">
+        </a>
+    </div>
+    
+    <h1>Ficha cadastral para professores do Ensino Médio</h1>
+    </header>
+    <form action="destino.html" method="page">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
+        <br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required>
+        <br><br>
+        <label for="materia">Para qual matéria deseja lecionar?</label><br>
+        <select name="materia" id="materia" required>
+            <option value="portuges">Português</option>
+            <option value="matematica">Matemática</option>
+            <option value="historia">História</option>
+            <option value="biologia">Biologia</option>
+            <option value="quimica">Química</option>
+            <option value="fisica">Física</option>
+            <option value="filosofia">Filosofia</option>
+            <option value="sociologia">Sociologia</option>
+            <option value="literatura">Literatura</option>
+            <option value="artes">Artes</option>
+            <option value="educ-fisica">Educação Física</option>
+            <option value="redacao">Redação</option>
+        </select>
+        <br><br>
+        <label for="escolaridade">Qual seu nível de escolaridade?</label><br>
+        <select id="escolaridade" name="escolaridade" required>
+            <option value="superior">Ensino Superior Completo</option>
+            <option value="mestrando">Cursando mestrado</option>
+            <option value="mestrando">Mestrado completo</option>
+            <option value="doutorando">Cursando doutorado</option>
+            <option VALUE="doutorado">Doutorado completo</option>
+        </select>
+        <br><br>
+        <label for="descricao">Faça uma breve descrição sobre si mesmo.</label><br><br>
+        <textarea name=descricao" id="descricao" cols="30" rows="5" required></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <br>
+    </form>
+    
+    </form>
+
+    <script src="script.js"></script>
+    </body>
+    <footer>
+    
+    </footer>
+    
+    </html>
